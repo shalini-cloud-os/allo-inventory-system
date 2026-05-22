@@ -1,0 +1,6 @@
+{
+  "name": "Allo Inventory & Reservation System",
+  "description": "Multi-warehouse inventory system with real-time stock reservation and concurrency conflict resolution.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
