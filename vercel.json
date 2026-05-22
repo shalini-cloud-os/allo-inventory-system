@@ -2,8 +2,8 @@
   "version": 2,
   "rewrites": [
     {
-      "source": "/api/(.*)",
-      "destination": "/api"
+      "source": "/api/:path*",
+      "destination": "https://allo-inventory-system-production.up.railway.app/api/:path*"
     },
     {
       "source": "/(.*)",
