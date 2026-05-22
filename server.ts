@@ -1,7 +1,6 @@
 import express from "express";
 import path from "path";
 import fs from "node:fs";
-import { createServer as createViteServer } from "vite";
 import { 
   Warehouse, 
   Product, 
@@ -563,7 +562,8 @@ async function bootLocalServer() {
   if (VERCEL_MODE) return;
 
   if (process.env.NODE_ENV !== "production") {
-    const vite = await createViteServer({
+    const { createServer } = await import("vite");
+    const vite = await createServer({
       server: { middlewareMode: true },
       appType: "spa",
     });
