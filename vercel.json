@@ -3,7 +3,7 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://allo-inventory-system.onrender.com/api/:path*"
+      "destination": "https://allo-inventory-system-production.up.railway.app/api/:path*"
     },
     {
       "source": "/(.*)",
